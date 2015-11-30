@@ -1,2 +1,7 @@
-<h1>Static#home</h1>
-<p>Find me in app/views/static/home.html.erb</p>
+<% if session[:current_user].present? %>
+  Hello, <%= session[:current_user] %>
+  <br /> <hr />
+  <%= link_to 'Logout', auth_logout_path %>
+<% else %>
+  <%= link_to 'Login', auth_login_path %>
+<% end %>
