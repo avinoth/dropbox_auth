@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'auth/login'
+
+  get 'auth/dropbox_callback'
+
+  get 'auth/logout'
+
   root 'static#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
