@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  dropbox_uid: 1
+  email: MyString
+  dropbox_token: MyString
+
+two:
+  name: MyString
+  dropbox_uid: 1
+  email: MyString
+  dropbox_token: MyString
