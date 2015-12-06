@@ -1,0 +1,14 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <% if session[:current_user].present? %>
+          <li><a href="#">Hello, <%= session[:current_user] %></a></li>
+          <li><%= link_to 'Logout', auth_logout_path %></li>
+        <% else %>
+          <li><%= link_to 'Login', auth_login_path %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>
